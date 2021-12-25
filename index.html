@@ -14,10 +14,11 @@
 <body>
     <!-- Верхняя линия-->
     <header class="header">
-        <a class="link studio-name" href="./index.html"><span class="web">Web</span>Studio</a>
+        <div class="container header-container">
+            <a class="link studio-name" href="./index.html"><span class="web">Web</span>Studio</a>
             <!-- Меню навигации -->
-            <nav class="menu-nav">
-                <ul class="list">               
+            <nav class="navigation">
+                <ul class="list header-list">               
                     <li>
                         <a class="link list-studio current" href="./index.html">Студия</a>
                     </li>
@@ -32,14 +33,17 @@
             <ul class="list contact-list">
                 <li><a class="link header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="link header-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul> 
+            </ul>
+        </div> 
     </header>
     <!-- Шапка сайта -->
     <main>
         <!-- Заказ услуги -->
         <section class="order-service">
-            <h1 class="order-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШОГО БИЗНЕСА</h1>
-            <button type="button" class="order-button">Заказать услугу</button>
+            <div class="container order-block">
+                <h1 class="order-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШОГО БИЗНЕСА</h1>
+                <button type="button" class="order-button">Заказать услугу</button>
+            </div>
         </section>
         <!-- Особености -->
         <section>

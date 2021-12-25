@@ -12,6 +12,8 @@ body {
     color: var(--text-color);
     width: 1600px;
     line-height: 1.5;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
 }
 
 .list {
@@ -24,19 +26,32 @@ body {
 }
 
 p, a, h1, h2, h3, h4, h5, h6 {
-    margin: 0 auto;
+    margin: 0;
 }
 
 button {
     cursor: pointer;
 }
 
+.container {
+    width: 1600px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
 
 
 /* -------------Стилизация Header------------- */
 
 .header {
     background: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
 }
 
 /* --Стилизация слова WebStudio-- */
@@ -49,17 +64,23 @@ button {
     line-height: 1.19; 
     letter-spacing: 0.03em;
     color: #000000;
+    margin-right: 93px;
+    padding-left: 215px;
 }
 
 .web {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-     letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
     color: var(--main-color);
 }
 
 /* --Стилизация меню навигации-- */
+
+.header-list {
+    display: flex;
+}
 
 .list-studio {
     font-weight: 500;
@@ -67,6 +88,7 @@ button {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    padding-right: 50px;
 }
 
 .list-portfolio {
@@ -75,6 +97,7 @@ button {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    padding-right: 50px;
 }
 
 .list-contacts {
@@ -104,6 +127,13 @@ button {
     color: #2196F3; 
 }
 
+.contact-list {
+    display: flex;
+    margin-left: auto;
+}
+
+
+
 /* --Стилизация контактов хедера-- */
 
 .header-mail {
@@ -113,6 +143,7 @@ button {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--grey-color);
+    padding-right: 50px;
 }
 
 .header-tel {
@@ -123,6 +154,10 @@ button {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--grey-color);
+}
+
+.contact-list:last-child {
+    padding-right: 215px;
 }
 
 .header-mail:hover,
@@ -140,6 +175,14 @@ button {
     background: #2F303A;
 }
 
+.order-block {
+    padding-top: 200px;
+    padding-right: 452px;
+    padding-bottom: 200px;
+    padding-left: 452px;
+}
+
+
 .order-title {
     font-weight: 900;
     font-size: 44px;
@@ -148,6 +191,7 @@ button {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 30px;
 }
 
 .order-button {
@@ -164,7 +208,13 @@ button {
     background: var(--main-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    margin: auto;
 }
+
 
 .order-button:hover,
 .order-button:focus {
