@@ -13,7 +13,7 @@ body {
     width: 1600px;
     line-height: 1.5;
     margin: 0 auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .list {
@@ -45,14 +45,18 @@ button {
 
 .header {
     background: #FFFFFF;
-    padding-top: 24px;
-    padding-bottom: 24px;
+   
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 }
 
 .header-container {
     display: flex;
     align-items: center;
     max-height: 80px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 215px;
+    padding-left: 215px;
 }
 
 /* --Стилизация слова WebStudio-- */
@@ -65,8 +69,8 @@ button {
     line-height: 1.19; 
     letter-spacing: 0.03em;
     color: #000000;
-    margin-right: 93px;
-    padding-left: 215px;
+    /* margin-right: 93px;
+    padding-left: 215px; */
 }
 
 .web {
@@ -157,9 +161,6 @@ button {
     color: var(--grey-color);
 }
 
-.contact-list:last-child {
-    padding-right: 215px;
-}
 
 .header-mail:hover,
 .header-mail:focus,
@@ -336,7 +337,16 @@ button {
 
 .footer {
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 215px;
+    max-height: 252px;
 }
+
+.footer-list {
+    padding-left: 0;
+}
+
 
 .footer-studio-name {
     font-family: "Raleway", sans-serif;
@@ -373,11 +383,20 @@ button {
     color: rgba(255, 255, 255, 0.6);
 }
 
+
 /* ----------Стилизация портфолио---------- */
 
 /* -- Фильтры -- */
 
+.portfolio-section {
+    background-color: #FFFFFF;
+}
 
+.filter-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+}
 
 .filter-btn {
     font-family: "Roboto", sans-serif;
@@ -390,12 +409,20 @@ button {
     color: var(--text-color);
     background: #F5F4FA;
     border-radius: 4px;
+    margin-right: 8px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    margin-bottom: 50px;
+    border: hidden;
 }
 
 .filter-btn:active {
     background: var(--main-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    outline-style: hidden;
 }
 
 .portfolio-title {
@@ -406,6 +433,9 @@ button {
     line-height: 2.00;
     letter-spacing: 0.06em;
     color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: 4px;
+    padding-left: 24px;
 }
 
 .portfolio-item {
@@ -415,6 +445,8 @@ button {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--grey-color);
+    margin-bottom: 20px;
+    padding-left: 24px;
 }
 
 .active {
@@ -428,4 +460,19 @@ button {
     background: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 94px;
+}
+
+.project-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
 }
