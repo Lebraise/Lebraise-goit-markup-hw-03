@@ -13,7 +13,7 @@ body {
     width: 1600px;
     line-height: 1.5;
     margin: 0 auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ECECEC;
 }
 
 .list {
@@ -25,7 +25,7 @@ body {
     text-decoration: none;
 }
 
-p, a, h1, h2, h3, h4, h5, h6 {
+p, ul, a, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
@@ -44,8 +44,7 @@ button {
 
 .header {
     background: #FFFFFF;
-   
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -175,13 +174,14 @@ button {
     padding-bottom: 94px;
 }
 
-.order-service {
+.order-section {
     background: #2F303A;
+
 }
 
 .order-block {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 106px;
+    padding-bottom: 106px;
 }
 
 
@@ -227,9 +227,8 @@ button {
 
 /* --Стилизация блока особеностей-- */
 
-.feature-block {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.feature-section {
+    padding-bottom: 0;
 }
 
 .feature-list {
@@ -237,11 +236,7 @@ button {
     justify-content: center;
 }
 
-.feature-list-item {
-    margin-right: 30px;
-}
-
-.feature-list:not(:last-child) {
+.feature-list-item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -275,25 +270,17 @@ button {
     margin-bottom: 50px;
 }
 
-
-.work-block {
-    padding-bottom: 94px;
-}
-
 .work-list {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .work-item {
     margin-right: 30px;
 }
 
-.team-div {
+.team-section {
     background-color: #F5F4FA;
-    /* padding-top: 94px;
-    padding-bottom: 94px; */
 }
 
 .team-list {
@@ -317,8 +304,7 @@ button {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--text-color);
-    margin-top: 30px;
+    color: var(--text-color);  
     margin-bottom: 10px;
 }
 
@@ -328,7 +314,11 @@ button {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--grey-color);
+}
+
+.member-box {
     padding-bottom: 30px;
+    margin-top: 30px;
 }
 
 /* -------------Стилизация Footer------------- */
@@ -338,13 +328,12 @@ button {
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 215px;
-    max-height: 252px;
 }
 
 .footer-list {
+    margin-top: 20px;
     padding-left: 0;
 }
-
 
 .footer-studio-name {
     font-family: "Raleway", sans-serif;
@@ -355,7 +344,6 @@ button {
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-
 
 .footer-adress {
     font-family: "Roboto", sans-serif;
@@ -381,6 +369,9 @@ button {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-list-item:not(:last-child) {
+    padding-bottom: 9px;
+}
 
 /* ----------Стилизация портфолио---------- */
 
@@ -432,9 +423,8 @@ button {
     line-height: 2.00;
     letter-spacing: 0.06em;
     color: var(--text-color);
-    margin-top: 20px;
     margin-bottom: 4px;
-    padding-left: 24px;
+    
 }
 
 .portfolio-item {
@@ -444,8 +434,6 @@ button {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--grey-color);
-    margin-bottom: 20px;
-    padding-left: 24px;
 }
 
 .active {
@@ -475,4 +463,10 @@ button {
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
+}
+
+.project-box {
+    margin-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
 }

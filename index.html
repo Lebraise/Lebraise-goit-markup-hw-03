@@ -39,15 +39,15 @@
     <!-- Шапка сайта -->
     <main>
         <!-- Заказ услуги -->
-        <section class="order-service">
+        <section class="section order-section">
             <div class="container order-block">
                 <h1 class="order-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШОГО БИЗНЕСА</h1>
                 <button type="button" class="order-button">Заказать услугу</button>
             </div>
         </section>
         <!-- Особености -->
-        <section>
-            <div class="container feature-block">
+        <section class="section feature-section">
+            <div class="container">
                 <ul class="list feature-list">
                     <li class="feature-list-item">
                         <h3 class="feature-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
@@ -69,7 +69,7 @@
             </div>
         </section>
         <!-- Информация о работе в фото -->
-        <section>
+        <section class="section">
             <div class="container work-block">
                 <h2 class="photo-title">Чем мы занимаемся</h2>
                 <ul class="list work-list">
@@ -86,30 +86,41 @@
             </div>           
         </section>
         <!-- Команда -->
-        <div class="container team-div">
-            <section class="section">
+            <section class="section team-section">
+                <div class="container">
                     <h2 class="photo-title">Наша команда</h2>
                     <ul class="list team-list">
                         <li class="team-item">
                             <img src="./images/demianenko.jpg" alt="Фото члена нашей команды" width="270">
-                            <p class="member-name">Игорь Демьяненко</p>
-                            <p lang="en" class="member-role">Product Designer</p>
+                            <div class="member-box">
+                                <p class="member-name">Игорь Демьяненко</p>
+                                <p lang="en" class="member-role">Product Designer</p>
+                            </div>
                         </li>
-                        <li class="team-item"><img src="./images/repina.jpg" alt="Фото члена нашей команды" width="270">
-                            <p class="member-name">Ольга Репина</p>
-                            <p lang="en" class="member-role">Frontend Developer</p>
+                        <li class="team-item">
+                            <img src="./images/repina.jpg" alt="Фото члена нашей команды" width="270">
+                            <div class="member-box">
+                                <p class="member-name">Ольга Репина</p>
+                                <p lang="en" class="member-role">Frontend Developer</p>
+                            </div>
                         </li>
-                        <li class="team-item"><img src="./images/tarasov.jpg" alt="Фото члена нашей команды" width="270">
-                            <p class="member-name">Николай Тарасов</p>
-                            <p lang="en" class="member-role">Marketing</p>
+                        <li class="team-item">
+                            <img src="./images/tarasov.jpg" alt="Фото члена нашей команды" width="270">
+                            <div class="member-box">
+                                <p class="member-name">Николай Тарасов</p>
+                                <p lang="en" class="member-role">Marketing</p>
+                            </div>
                         </li>
-                        <li class="team-item"><img src="./images/ermakov.jpg" alt="Фото члена нашей команды" width="270">
-                            <p class="member-name">Михаил Ермаков</p>
-                            <p lang="en" class="member-role">UI Designer</p>
+                        <li class="team-item">
+                            <img src="./images/ermakov.jpg" alt="Фото члена нашей команды" width="270">
+                            <div class="member-box">
+                                <p class="member-name">Михаил Ермаков</p>
+                                <p lang="en" class="member-role">UI Designer</p>
+                            </div>
                         </li>  
                     </ul>
+                </div>
             </section>
-        </div>
     </main>
     <!-- Подвал сайта -->
     <footer class="footer">
@@ -117,13 +128,13 @@
             <a class="link footer-studio-name" href="/index.html"><span class="web">Web</span>Studio</a>
             <address>
                 <ul class="list footer-list">
-                    <li>
+                    <li class="footer-list-item">
                         <a class="link footer-adress" href="https://goo.gl/maps/6Xr1MrQCFGWjLaGo9" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
                     </li>
-                    <li>
+                    <li class="footer-list-item">
                         <a class="link footer-contact" href="mailto:info@example.com">info@example.com</a>
                     </li>
-                    <li>
+                    <li class="footer-list-item">
                         <a class="link footer-contact" href="tel:+380991111111">+38 099 111 11 11</a>
                     </li>
                 </ul>
